@@ -1,0 +1,180 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: solid;
+    display: inline-block;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.icono {
+    display: block;
+    z-index: 1000000;
+    /*animation:*/
+
+}
+
+header {
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+img {
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    width: auto;
+    animation: arriba 2s ease-in;
+
+}
+
+.textos {
+    width: 50%;
+    color: aliceblue;
+}
+
+.textos h1 {
+    font-size: 80px;
+    animation: moverDerecha 2s ease-in;
+
+}
+
+.textos h2 {
+    font-size: 20px;
+    animation: moverIzquierda 2s ease-in;
+
+}
+
+.textos a {
+    display: inline-block;
+    color: aliceblue;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 2px solid aliceblue;
+    width: 120px;
+    border-radius: 7px;
+    text-align: center;
+    padding: 4px;
+    animation: arriba 2s ease-in;
+
+}
+
+.wave {
+    height: 100%;
+    width: 100%;
+
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+}
+
+.enlaces {
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: black;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease;
+
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+
+}
+
+.uno {
+
+}
+
+.dos {
+
+}
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }    
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }    
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }    
+}
